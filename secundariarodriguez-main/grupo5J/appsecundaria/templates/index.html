@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'estilos.css '%}"> 
+    <title> "rodriguez jajaja"</title>
+
+    </head>
+<body><script src=""></script>
+    <h1> HOLA MUNDO CRUEL </h1>
+    <h1> Rodriguez Ariel <h1>
+    <HR>
+        {% for i  in misalumnos %}
+        <li> <a href="alumno/{{i.id}}">{{i.nombre}}</a></li>
+
+        {% endfor %}
+        
+    </HR>
+</body>
+</html>

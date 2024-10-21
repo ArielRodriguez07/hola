@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang-"en">
+<head>
+    <meta charset="UTF-8">
+    <title> la frase </title>
+</head>
+
+<body>
+    <h1>{{objeto.nombre}}</h1>
+    <ul>
+        {% for i in objeto.frase_set.all %}
+            <li> {{i.comentario}}</a></li>
+            {% endfor %}
+    </ul>
+</body>
+</html>
